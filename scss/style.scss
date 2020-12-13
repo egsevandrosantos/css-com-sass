@@ -2,16 +2,63 @@ $cor-primaria: rgba(0, 0, 255);
 $fonte-primaria: monospace;
 $gutter: 20px;
 
+@mixin title-large {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: monospace;
+  line-height: 1;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin separador($color: $cor-primaria, $largura: 100px) {
+  &::after {
+    content: "";
+    display: block;
+    width: $largura;
+    height: 4px;
+    background: $color;
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+}
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
 section.modal {
   max-width: 600px;
   margin: 0 auto;
+  @include border-box();
 }
 
 .modal {
+  @include box-shadow(
+    10px 10px 0 0 rgba(0, 0, 0, 0.5),
+    15px 15px 0 0 rgba(0, 0, 0, 0.5),
+    20px 20px 0 0 rgba(0, 0, 0, 0.5)
+  );
   h1 {
     color: $cor-primaria;
     font-family: $fonte-primaria;
     margin-bottom: $gutter;
+    @include title-large();
+    @include separador();
+    @include mobile() {
+      color: #84e;
+      font-size: 2em;
+    }
   }
 
   p {
@@ -19,9 +66,15 @@ section.modal {
       size: 1.2em;
       family: $fonte-primaria;
       style: italic;
+      // @include mobile() {
+      //   size: 0.8em;
+      // } Não funciona
     }
     // font-size: 1.2em;
     // font-family: $fonte-primaria;
+    @include mobile() {
+      font-size: 0.8em;
+    }
     line-height: 1.4;
     max-width: 400px;
   }
@@ -51,11 +104,14 @@ ul {
       text-decoration: none;
       background: $cor-primaria;
       color: white;
-      &:hover, &.active, .active {
+      &:hover,
+      &.active,
+      .active {
         background: pink;
       }
-      &::after, &::before {
-        content: ' ';
+      &::after,
+      &::before {
+        content: " ";
       }
       .active & {
         background: blue;
