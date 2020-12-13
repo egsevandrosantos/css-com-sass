@@ -37,6 +37,39 @@ $gutter: 20px;
   }
 }
 
+%clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.erro {
+  color: red;
+  font-weight: bold;
+}
+
+a.erro {
+  display: block;
+}
+
+.button-erro {
+  @extend .erro;
+  padding: 20px;
+  width: 200px;
+}
+
+div {
+  @extend %clearfix;
+}
+
+section {
+  @extend %clearfix;
+}
+
+.clearfix {
+  @extend %clearfix;
+}
+
 section.modal {
   max-width: 600px;
   margin: 0 auto;

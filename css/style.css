@@ -1,3 +1,23 @@
+.clearfix::after, section::after, div::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.erro, .button-erro {
+  color: red;
+  font-weight: bold;
+}
+
+a.erro, a.button-erro {
+  display: block;
+}
+
+.button-erro {
+  padding: 20px;
+  width: 200px;
+}
+
 section.modal {
   max-width: 600px;
   margin: 0 auto;
