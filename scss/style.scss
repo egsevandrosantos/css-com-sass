@@ -2,35 +2,64 @@ $cor-primaria: rgba(0, 0, 255);
 $fonte-primaria: monospace;
 $gutter: 20px;
 
-section {
+section.modal {
   max-width: 600px;
   margin: 0 auto;
 }
 
-h1 {
-  color: $cor-primaria;
-  font-family: $fonte-primaria;
-  margin-bottom: $gutter;
+.modal {
+  h1 {
+    color: $cor-primaria;
+    font-family: $fonte-primaria;
+    margin-bottom: $gutter;
+  }
+
+  p {
+    font: {
+      size: 1.2em;
+      family: $fonte-primaria;
+      style: italic;
+    }
+    // font-size: 1.2em;
+    // font-family: $fonte-primaria;
+    line-height: 1.4;
+    max-width: 400px;
+  }
+
+  a {
+    display: block;
+    max-width: 120px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background: $cor-primaria;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $fonte-primaria;
+  }
 }
 
-$cor-primaria: pink;
-
-p {
-  font-size: 1.2em;
-  line-height: 1.4;
-  max-width: 400px;
-  font-family: $fonte-primaria;
-}
-
-a {
-  display: block;
-  max-width: 120px;
-  padding: 10px;
-  border-radius: 4px;
+ul {
   text-align: center;
-  background: $cor-primaria;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: $fonte-primaria;
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+      background: $cor-primaria;
+      color: white;
+      &:hover, &.active, .active {
+        background: pink;
+      }
+      &::after, &::before {
+        content: ' ';
+      }
+      .active & {
+        background: blue;
+      }
+    }
+  }
 }
