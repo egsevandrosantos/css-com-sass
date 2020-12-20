@@ -43,7 +43,16 @@ $gutter: 20px;
   }
 }
 
+@function em($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1em;
+}
+
+@function grid($colunas, $total: 12) {
+  @return round($colunas / $total * 100%);
+}
+
 div {
+  width: grid(3, 6);
   width: 100%;
   @include device(tablet) {
     width: 80%;
@@ -205,9 +214,11 @@ section.modal {
 ul {
   text-align: center;
   li {
+    font-size: em(36);
     display: inline-block;
     list-style: none;
     a {
+      font-size: em(16, 36);
       display: block;
       padding: 20px;
       text-decoration: none;
@@ -216,7 +227,9 @@ ul {
       &:hover,
       &.active,
       .active {
-        background: pink;
+        background: transparentize(blue, 0.5);
+        // background: darken($cor-primaria, 20%);
+        // background: lighten($cor-primaria, 20%);
       }
       &::after,
       &::before {

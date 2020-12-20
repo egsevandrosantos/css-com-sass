@@ -1,4 +1,5 @@
 div {
+  width: 50%;
   width: 100%;
 }
 @media (max-width: 600px) {
@@ -116,10 +117,12 @@ ul {
   text-align: center;
 }
 ul li {
+  font-size: 2.25em;
   display: inline-block;
   list-style: none;
 }
 ul li a {
+  font-size: 0.4444444444em;
   display: block;
   padding: 20px;
   text-decoration: none;
@@ -128,7 +131,7 @@ ul li a {
 }
 ul li a:hover, ul li a.active,
 ul li a .active {
-  background: pink;
+  background: rgba(0, 0, 255, 0.5);
 }
 ul li a::after, ul li a::before {
   content: " ";
