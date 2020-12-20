@@ -1,3 +1,30 @@
+div {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  div {
+    width: 80%;
+  }
+}
+@media (max-width: 300px) {
+  div {
+    width: 60%;
+  }
+}
+
+div {
+  width: 401px;
+  height: 601.5px;
+}
+
+p {
+  color: blue;
+  background: orange;
+  font-family: monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 .clearfix::after, section::after, div::after {
   display: table;
   content: "";
