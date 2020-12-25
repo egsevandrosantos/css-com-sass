@@ -631,6 +631,7 @@ img {
 #form-send span {
   font-size: 18px;
   line-height: 25px;
+  line-height: 25px;
   margin-bottom: 10px;
   display: block;
 }
@@ -787,6 +788,7 @@ img {
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0.1em;
 }
 
@@ -923,11 +925,11 @@ img {
 
 .qualidade_lista li h3 {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .qualidade_lista li h3:after {
@@ -962,12 +964,12 @@ img {
 }
 
 .footer h3 {
-  font-size: 18px;
-  line-height: 25px;
   color: #fec63e;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .footer h3:after {
@@ -984,9 +986,9 @@ img {
 }
 
 .footer_contato ul li {
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
   line-height: 20px;
-  font-family: Georgia, "Times New Roman", serif;
 }
 
 .footer_redes ul li {
@@ -1068,15 +1070,16 @@ img {
 }
 
 .missao_sobre p {
-  font-size: 18px;
-  line-height: 25px;
   margin-bottom: 1em;
   padding-right: 60px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .missao_sobre ul li {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
+  line-height: 25px;
   line-height: 30px;
 }
 
@@ -1095,7 +1098,6 @@ img {
 
 .produto_item h2 {
   color: #fff;
-  font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -1103,6 +1105,7 @@ img {
   top: -180px;
   text-align: center;
   margin-bottom: -56px;
+  font-size: 36px;
 }
 
 .produto_item h2:after,
@@ -1130,23 +1133,24 @@ img {
 
 .produto_info p {
   color: #fff;
-  font-size: 18px;
-  line-height: 25px;
   height: 180px;
   padding: 30px 40px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .produto_info ul li {
   background: #fec63e;
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 20px;
   font-weight: bold;
   float: left;
   width: 229px;
   height: 49px;
   text-align: center;
   padding-top: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  line-height: 20px;
 }
 
 .produto_info ul li:nth-child(1),
@@ -1196,8 +1200,9 @@ img {
   padding: 7px 10px;
   margin-bottom: 10px;
   outline: none;
-  font-size: 14px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .form textarea {
@@ -1210,8 +1215,9 @@ img {
   padding: 7px 10px;
   margin-bottom: 20px;
   outline: none;
-  font-size: 14px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .form button {
@@ -1233,9 +1239,10 @@ img {
 
 .orcamento_dados span {
   display: block;
-  font-size: 18px;
-  line-height: 30px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 25px;
+  line-height: 30px;
 }
 
 .orcamento_dados span:nth-of-type(2) {
@@ -1249,6 +1256,7 @@ img {
 .orcamento_dados ul li {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 14px;
+  line-height: 20px;
   padding: 10px 15px;
 }
 
@@ -1282,6 +1290,7 @@ img {
 
 .quote_clientes cite {
   font-size: 18px;
+  line-height: 25px;
   font-weight: bold;
   float: right;
   font-style: normal;
@@ -1366,10 +1375,10 @@ img {
 
 .contato_form label {
   display: block;
+  margin-bottom: 4px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 4px;
 }
 
 .contato_form input {
@@ -1380,8 +1389,9 @@ img {
   padding: 7px 10px;
   margin-bottom: 10px;
   outline: none;
-  font-size: 14px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contato_form textarea {
@@ -1393,8 +1403,9 @@ img {
   padding: 7px 10px;
   margin-bottom: 20px;
   outline: none;
-  font-size: 14px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contato_form button {
@@ -1409,6 +1420,7 @@ img {
 .contato_dados h3 {
   font-size: 18px;
   line-height: 25px;
+  line-height: 25px;
   text-transform: uppercase;
   color: #fec63e;
   font-weight: bold;
@@ -1416,9 +1428,10 @@ img {
 
 .contato_dados span {
   display: block;
-  font-size: 18px;
-  line-height: 30px;
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 25px;
+  line-height: 30px;
 }
 
 .contato_dados span:nth-of-type(even) {
@@ -1482,10 +1495,10 @@ img {
   }
 
   .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
     height: 122px;
     padding: 20px 30px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .produto_info ul li {
@@ -1565,6 +1578,7 @@ img {
 
   .missao_sobre ul li {
     font-size: 14px;
+    line-height: 20px;
     line-height: 25px;
   }
 
@@ -1579,18 +1593,18 @@ img {
   }
 
   .produto_info p {
-    font-size: 14px;
-    line-height: 20px;
     height: auto;
     padding: 20px 30px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .produto_info ul li {
     width: 149px;
     height: 49px;
+    padding-top: 14px;
     font-size: 14px;
     line-height: 20px;
-    padding-top: 14px;
   }
 
   .form {
